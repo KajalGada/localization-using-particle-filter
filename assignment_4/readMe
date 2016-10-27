@@ -1,0 +1,25 @@
+Terminal One:
+roscore
+
+Terminal Two:
+cd ros_programs/catkin_ws
+catkin_make
+. devel/setup.bash
+rosrun rviz rviz -d ~/PATH-TO-PACKAGE/assignment_4/localization/hill_climb.rviz
+
+Terminal Three:
+catkin_make
+. devel/setup.bash
+rosrun localization query_pose.py ~/PATH-TO-PACKAGE/assignment_4/localization/EasyMap.bag ~/PATH-TO-PACKAGE/assignment_4/localization/easy-1.bag
+
+rosrun localization query_pose.py ~/PATH-TO-PACKAGE/assignment_4/localization/CSE5Map.bag ~/PATH-TO-PACKAGE/assignment_4/localization/cse550-3.bag
+
+#Part 2
+rosrun localization hill_climb.py ~/PATH-TO-PACKAGE/assignment_4/localization/EasyMap.bag ~/PATH-TO-PACKAGE/assignment_4/localization/easy-1.bag -ros
+
+#Part 2 (good results)
+rosrun localization hill_climb.py ~/PATH-TO-PACKAGE/assignment_4/localization/EasyMap2.bag ~/PATH-TO-PACKAGE/assignment_4/localization/easy-1.bag -ros -particles 100 -iterations 5
+
+rosrun localization ll_climb.py ~/PATH-TO-PACKAGE/assignment_4/localization/EasyMap.bag ~/PATH-TO-PACKAGE/assignment_4/localization/easy-2.bag -ros -particles 200 -iterations 10
+
+rosrun localization hill_climb.py ~/PATH-TO-PACKAGE/assignment_4/localization/CSE550Map.bag ~/PATH-TO-PACKAGE/assignment_4/localization/cse550-2.bag -ros -particles 200 -iterations 10
