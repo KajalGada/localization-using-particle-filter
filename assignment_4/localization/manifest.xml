@@ -1,0 +1,15 @@
+<package>
+  <description brief="localization">
+
+     localization
+
+  </description>
+  <author>dlu</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/localization</url>
+  <depend package="assignment_3"/>
+  <depend package="assignment_4"/>
+</package>
+
+
