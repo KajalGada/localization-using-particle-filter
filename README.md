@@ -14,5 +14,6 @@ For a number of iterations:
   Estimate the position of robot
   ```
   
-  ##Result:
-  
+##Result
+An example of Localization. The red arrows indicate random particles. The yellow arrow indicates the true position and blue arrow indicates the estimated position.
+![alt text](https://github.com/KajalGada/localization-using-particle-filter/blob/master/Images/Screenshot_Localization.png "Example")
