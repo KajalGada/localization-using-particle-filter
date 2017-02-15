@@ -11,4 +11,8 @@ Generate random particles in free space
 For a number of iterations:
   Compute probability for each particle using laser scan
   Re-sample using the probability
-  Estimate the position of robot`
+  Estimate the position of robot
+  ```
+  
+  ##Result:
+  
